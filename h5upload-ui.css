@@ -1,0 +1,228 @@
+.file-uploader {
+    width: 100%;
+	box-sizing: border-box;
+}
+.file-uploader * {
+	box-sizing: border-box;
+}
+
+.file-uploader-multi {
+	margin: 5px 0 0 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.file-uploader-multi .header {
+	position: relative;
+    background: #f4f4f4;
+    font-weight: bold;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.file-uploader-multi .footer {
+    height: 30px;
+    position: relative;
+}
+
+.file-uploader-multi .drop-zone {
+    padding: 1em 0;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.file-uploader-multi .drop-zone .errors {
+    position: absolute;
+    width: 100%;
+    line-height: 25px;
+    left: 0;
+    bottom: 0;
+    background: rgb(255,92,74);
+    text-align: center;
+    font-size: 0.8em;
+    text-transform: none;
+    color: #f5f5f5;
+}
+
+.file-uploader-multi .file-uploader-browse,
+.file-uploader-single .file-uploader-browse {
+	position: relative;
+	display: inline-block;
+	width: 15%;
+	height: 2.33em;
+	max-height: 2.33em;
+	overflow: hidden;
+	vertical-align: middle;
+}
+
+.file-uploader-multi .file-uploader-browse input[type=file],
+.file-uploader-single .file-uploader-browse input[type=file] {
+	opacity: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+	
+.file-uploader-multi .header button,
+.file-uploader-single button {
+	position: absolute;
+	width: 100%;
+	line-height: 1.6;
+	padding-top: .35em;
+	height: 2.33em;
+	max-height: 2.33em;
+	overflow: hidden;
+	z-index: 1;
+}
+.file-uploader-multi .header button {
+	margin-bottom: -1px;
+}
+
+.file-uploader-multi .total {
+	display: inline-block;
+    width: 85%;
+}
+
+.file-uploader-single .selected-file {
+	position: relative;
+    width: 85%;
+	background: #fff;
+	border: 1px solid #ccc;
+	border-left-width: 0;
+	height: 2.33em;
+    display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	padding: .425em .5em;
+}
+
+.file-uploader .filename-tools {
+	position: absolute;
+	top:-1px;
+	right:0;
+	width: auto;
+	height: 2.33em;
+	max-height: 2.33em;
+	padding: 0.5em .5em 0 .5em;
+	background: #f4f4f4;
+	border-left: 1px solid #e4e4e4;
+}
+.file-uploader-multi .header .filename-tools {
+	border-width: 0;
+	background: transparent;
+}
+
+.filename-error {
+	color: #f00;
+}
+
+.filename-tools.filename-error {
+	font-weight: bold;
+}
+
+.file-uploader-multi ul.files {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.file-uploader-multi ul.files > li {
+	position: relative;
+	height: 2.33em;
+	overflow: hidden;
+    padding: .425em .5em;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+.file-uploader-multi ul.files > li:hover {
+    background: #fafafa;
+}
+
+.file-uploader .filename {
+	display: inline;
+	vertical-align: baseline;
+	white-space: nowrap;
+	width: auto;
+    font-weight: bold;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.file-uploader .ui-progressbar {
+	display: inline-block;
+    width: 80px;
+	vertical-align: baseline;
+	margin-right: .4em;
+}
+
+.file-uploader .size {
+	display: inline-block;
+    width: auto;
+	vertical-align: baseline;
+	padding: 0;
+	text-align: right;
+	color: #999;
+	font-weight: bold;
+	margin-right: .4em;
+}
+
+.file-uploader a.remove-file,
+.file-uploader span.uploaded-file {
+    display: inline-block;
+}
+.file-uploader a.remove-all:hover *,
+.file-uploader a.remove-file:hover * {
+	color: #d30 !important;
+}
+
+.file-uploader .ui-progressbar {
+    background: #ffffff;
+}
+.file-uploader .ui-progressbar-value {
+    background-color: #A1A1A1;
+	width: 0;
+}
+
+.file-uploader.accept-dragdrop .drop-zone,
+.file-uploader.accept-dragdrop .selected-file {
+	background-color: #dfb;
+}
+
+.file-uploader-multi .drop-zone .ext-filters {
+	padding: .3em 3em;
+	font-size: 12px;
+	line-height: 1.3;
+}
+
+.file-uploader-single .ext-filters {
+	padding: 0;
+	text-align: right;
+}
+.file-uploader .ext-filters b,
+.file-uploader .ext-filters i {
+	color: #bbb;
+	padding: 0 1px;
+	font-weight: normal;
+	font-style: normal;
+	text-transform: none;
+	font-size: 0.9em;
+	margin-bottom: .5em;
+	display: inline-block;
+}
+
+.file-uploader .ext-filters b {
+	color: #999;
+	padding: 0 2px;
+	border-radius: 3px;
+	background: #eee;
+}
+
+.file-uploader-multi .drop-zone .ext-filters i {
+	margin-bottom: .3em;
+}
